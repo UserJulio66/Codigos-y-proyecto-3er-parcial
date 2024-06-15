@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definicion</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #2c8622;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2c8622;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            padding: 10px 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #2c8622;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ffffff;
+        }
+        th {
+            background-color: #ffffff;
+        }
+        .button-container1 {
+            text-align: left;
+            margin: 20px 0; /* Ajusta el margen superior e inferior según sea necesario */
+        }
+        .button-container1 a {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #2c8622;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button-container1 a:hover {
+            background-color: #bceca5;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="display: flex; align-items: center;">
+        <h1 style="margin-right: 20px;">Salud mental y manejo de adicciones</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Pagina web Proyecto final (objetivo 1)(Adic).html">Objetivo</a></li>
+            <li><a href="Pagina web Proyecto final (mision 1)(Adic).html">Misión</a></li>
+            <li><a href="Pagina web Proyecto final (vision 1)(Adic).html">Visión</a></li>
+            <li><a href="Pagina web Proyecto final (nosotros 1)(Adic).html">Nosotros</a></li>
+            <li><a href="Pagina web Proyecto final (contacto 1)(Adic).html">Contacto</a></li>
+            <li><a href="Pagina web Proyecto final (juegos 1)(Adic).html">Aprende jugando</a></li>
+        </ul>
+    </nav>
+
+    <div class="button-container1">
+        <a href="index.html">Regresar a la Página Principal</a>
+    </div>
+
+    <div class="random-message" id="randomMessage"></div>
+
+    <script>
+        // Lista de mensajes
+        const messages = [
+            "Cuida tu mente, es tu mayor tesoro.",
+            "Cada pequeño paso cuenta para una gran recuperación.",
+            "Busca ayuda, hablar es el primer paso hacia la solución.",
+            "Eres más fuerte de lo que piensas, sigue adelante.",
+            "La prevención es la clave para una vida plena y saludable."
+        ];
+
+        // Función para obtener un mensaje aleatorio
+        function getRandomMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            return messages[randomIndex];
+        }
+
+        // Insertar el mensaje aleatorio en el HTML
+        document.getElementById('randomMessage').textContent = getRandomMessage();
+    </script>
+
+    <main>
+        
+        <section id="introduccion">
+            <div class="container">
+                <h2>Salud Mental</h2>
+                
+                <h3>Datos y números de la salud del adolescente en México</h3>
+                <p>
+                    La salud mental de los adolescentes en México es una preocupación creciente. Según la Encuesta Nacional de Salud y Nutrición (ENSANUT), alrededor del 15% de los adolescentes presentan algún problema de salud mental, con la depresión y la ansiedad siendo las condiciones más comunes. La Secretaría de Salud reporta que el suicidio es la tercera causa de muerte entre jóvenes de 15 a 29 años.
+                </p>
+                
+                <h3>Factores que afectan la salud mental en los adolescentes</h3>
+                <ul>
+                    <li><strong>Entorno familiar:</strong> Conflictos, violencia doméstica y falta de apoyo emocional pueden contribuir a problemas de salud mental.</li>
+                    <li><strong>Entorno escolar:</strong> Bullying, presión académica y falta de integración social afectan negativamente la salud mental.</li>
+                    <li><strong>Factores socioeconómicos:</strong> Pobreza, inseguridad y falta de acceso a servicios de salud mental incrementan el riesgo de trastornos mentales.</li>
+                    <li><strong>Uso de redes sociales:</strong> La exposición excesiva puede llevar a problemas como depresión y ansiedad.</li>
+                </ul>
+                
+                <h3>¿Qué es el trastorno emocional?</h3>
+                <p>
+                    Un trastorno emocional se caracteriza por una respuesta emocional que no es adecuada a la situación. Esto puede incluir depresión, ansiedad, trastornos de pánico y trastornos de estrés postraumático (TEPT). Estos trastornos afectan el bienestar emocional y la capacidad de una persona para funcionar en su vida diaria.
+                </p>
+                
+                <h3>¿Qué es el trastorno de comportamiento?</h3>
+                <p>
+                    El trastorno de comportamiento se refiere a patrones persistentes de comportamiento que violan las normas sociales o los derechos de los demás. Ejemplos incluyen el trastorno de conducta y el trastorno negativista desafiante. Estos pueden manifestarse en conductas agresivas, desafiantes y destructivas.
+                </p>
+                
+                <h3>¿Qué es el trastorno alimenticio?</h3>
+                <p>
+                    Los trastornos alimenticios son condiciones graves relacionadas con comportamientos alimentarios persistentes que afectan negativamente la salud, las emociones y la capacidad de funcionar en áreas importantes de la vida. Entre los más comunes se encuentran la anorexia nerviosa, la bulimia nerviosa y el trastorno por atracón.
+                </p>
+                
+                <h3>Promoción y Prevención para el control de emociones y Salud Mental</h3>
+                <ul>
+                    <li><strong>Educación y sensibilización:</strong> Programas escolares y comunitarios para educar sobre salud mental y reducir el estigma.</li>
+                    <li><strong>Apoyo emocional:</strong> Fortalecimiento de redes de apoyo en la familia, la escuela y la comunidad.</li>
+                    <li><strong>Habilidades para la vida:</strong> Enseñar a los adolescentes habilidades para manejar el estrés y las emociones.</li>
+                    <li><strong>Acceso a servicios:</strong> Mejorar el acceso a servicios de salud mental de calidad y asequibles.</li>
+                </ul>
+                
+                <h3>Tratamiento y Ayuda</h3>
+                <p>En México, existen varias instituciones reconocidas que ofrecen tratamiento y apoyo para problemas de salud mental:</p>
+                <ul>
+                    <li><strong>Instituto Nacional de Psiquiatría Ramón de la Fuente Muñiz:</strong> Ofrece atención especializada y es un centro de referencia nacional en salud mental.</li>
+                    <li><strong>Hospital Psiquiátrico Fray Bernardino Álvarez:</strong> Proporciona servicios psiquiátricos y psicológicos integrales.</li>
+                    <li><strong>Centro de Integración Juvenil (CIJ):</strong> Brinda apoyo y tratamiento para adolescentes con problemas de adicciones y salud mental.</li>
+                    <li><strong>Clínicas de Salud Mental del IMSS e ISSSTE:</strong> Disponibles para derechohabientes y ofrecen servicios de psicoterapia y psiquiatría.</li>
+                </ul>
+                
+                <p>
+                    Promover el acceso a estos servicios y fomentar un entorno de apoyo son esenciales para mejorar la salud mental de los adolescentes en México.
+                </p>
+            </div>
+        </section>
+        
+        <section id="prevencion">
+            <div class="container">
+                <h2>Prevención y Control de Adicciones</h2>
+                
+                <h3>Datos y cifras de las adicciones en los adolescentes en México</h3>
+                <p>
+                    En México, las adicciones entre adolescentes son un problema significativo. Según la Encuesta Nacional de Consumo de Drogas, Alcohol y Tabaco (ENCODAT) 2016-2017:
+                    <ul>
+                        <li>El 10.3% de los adolescentes entre 12 y 17 años ha consumido alguna droga ilegal al menos una vez en su vida.</li>
+                        <li>El consumo de alcohol se inicia a una edad promedio de 12.6 años.</li>
+                        <li>El 17.6% de los adolescentes ha fumado tabaco alguna vez.</li>
+                    </ul>
+                </p>
+                
+                <h3>Principales adicciones en los adolescentes en México</h3>
+                <ul>
+                    <li><strong>Alcohol:</strong> Es la sustancia más consumida. El consumo excesivo de alcohol en adolescentes puede llevar a problemas de salud y de comportamiento.</li>
+                    <li><strong>Tabaco:</strong> Fumar cigarrillos es común y a menudo empieza en la adolescencia, lo que puede llevar a una adicción a largo plazo.</li>
+                    <li><strong>Marihuana:</strong> Es la droga ilegal más consumida por los adolescentes.</li>
+                    <li><strong>Inhalantes:</strong> El uso de sustancias inhalables, como pegamento o solventes, es común entre los jóvenes debido a su fácil acceso.</li>
+                    <li><strong>Drogas sintéticas:</strong> El uso de drogas sintéticas como las metanfetaminas está en aumento.</li>
+                </ul>
+                
+                <h3>¿Cómo influyen las adicciones en la salud mental?</h3>
+                <ul>
+                    <li><strong>Problemas emocionales y de comportamiento:</strong> Las adicciones pueden causar o exacerbar trastornos emocionales como la depresión y la ansiedad, así como trastornos de comportamiento.</li>
+                    <li><strong>Trastornos duales:</strong> Muchos adolescentes con adicciones también sufren de trastornos mentales, lo que complica el tratamiento y la recuperación.</li>
+                    <li><strong>Impacto en el desarrollo:</strong> El consumo de sustancias puede interferir con el desarrollo cerebral en adolescentes, afectando su capacidad cognitiva y emocional.</li>
+                </ul>
+                
+                <h3>Recomendaciones para la prevención de adicciones</h3>
+                <ul>
+                    <li><strong>Educación y sensibilización:</strong> Implementar programas educativos en escuelas y comunidades para informar sobre los riesgos de las adicciones.</li>
+                    <li><strong>Fortalecimiento familiar:</strong> Promover la comunicación y el apoyo en el entorno familiar para reducir el riesgo de consumo de sustancias.</li>
+                    <li><strong>Desarrollo de habilidades para la vida:</strong> Enseñar a los adolescentes habilidades para resistir la presión de grupo y tomar decisiones saludables.</li>
+                    <li><strong>Acceso a actividades recreativas:</strong> Fomentar la participación en deportes, artes y otras actividades que proporcionen alternativas positivas al consumo de sustancias.</li>
+                    <li><strong>Monitoreo y supervisión:</strong> Los padres y cuidadores deben estar atentos a los signos de consumo y mantener un diálogo abierto y sin juicio con los adolescentes.</li>
+                </ul>
+                
+                <h3>Tratamiento y Ayuda</h3>
+                <p>En México, existen varias instituciones oficiales y reconocidas que ofrecen tratamiento y apoyo para adolescentes con problemas de adicciones:</p>
+                <ul>
+                    <li><strong>Centros de Integración Juvenil (CIJ):</strong> Ofrecen programas de prevención, tratamiento y rehabilitación para jóvenes con problemas de adicciones.</li>
+                    <li><strong>Comisión Nacional contra las Adicciones (CONADIC):</strong> Coordina esfuerzos a nivel nacional para la prevención y tratamiento de adicciones, proporcionando recursos y apoyo.</li>
+                    <li><strong>Instituto Nacional de Psiquiatría Ramón de la Fuente Muñiz:</strong> Proporciona atención especializada en salud mental y adicciones.</li>
+                    <li><strong>Clínicas de atención del IMSS e ISSSTE:</strong> Ofrecen servicios de tratamiento para derechohabientes con problemas de adicciones.</li>
+                </ul>
+                
+                <p>
+                    Promover el acceso a estos servicios y apoyar a los adolescentes en riesgo es esencial para abordar el problema de las adicciones en México.
+                </p>
+            </div>
+        </section>
+        
+        <section id="tabla">
+            <div class="container">
+                <h2>Recursos</h2>
+                <table>
+                    <thead>
+                        <tr>
+        
+        <section id="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Recurso</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Talleres</td>
+                        <td>Talleres semanales sobre manejo del estrés y promoción de la salud mental.</td>
+                    </tr>
+                    <tr>
+                        <td>Charlas</td>
+                        <td>Charlas informativas sobre los riesgos de las adicciones y cómo prevenirlas.</td>
+                    </tr>
+                    <tr>
+                        <td>Recursos en línea</td>
+                        <td>Acceso a materiales educativos y recursos en línea sobre salud mental y prevención de adicciones.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <div style="text-align: center;">
+    <img src="Cartel_Fentanilo_Campan_a_Estrategia_Aula_contra_adicciones.jpeg" alt="Descripción de la imagen 1">
+</div>
+
+
+    <footer style="margin-top: 20px;">
+        <p>&copy; 2024 Cecytem Coacalco</p>
+    </footer>
+</body>
+</html>
